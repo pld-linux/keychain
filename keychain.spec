@@ -5,7 +5,8 @@ Version:	2.0.2
 Release:	1
 Vendor:		Gentoo Technologies, Inc.
 URL:		http://www.gentoo.org/proj/en/keychain.xml
-Source0:	%{name}-%{version}.tar.bz2
+Source0:	http://distro.ibiblio.org/pub/linux/distributions/gentoo/distfiles/%{name}-%{version}.tar.bz2
+# Source0-md5:	931bab773fe6cc438b07694a6f22e819
 License:	GPL v2
 Group:		Applications/Networking
 BuildArch:	noarch
