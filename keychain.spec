@@ -1,17 +1,17 @@
-Summary:	Key management application for OpenSSH and commercial SSH2-compatible RSA/DSA keys
-Summary(pl):	Zarz±dca kluczy ssh
+Summary:	Key management application for SSH RSA/DSA keys
+Summary(pl):	Zarz±dca kluczy RSA/DSA dla SSH
 Name:		keychain
 Version:	2.0.2
 Release:	1
+License:	GPL v2
 Vendor:		Gentoo Technologies, Inc.
-URL:		http://www.gentoo.org/proj/en/keychain.xml
+Group:		Applications/Networking
 Source0:	http://distro.ibiblio.org/pub/linux/distributions/gentoo/distfiles/%{name}-%{version}.tar.bz2
 # Source0-md5:	931bab773fe6cc438b07694a6f22e819
-License:	GPL v2
-Group:		Applications/Networking
+URL:		http://www.gentoo.org/proj/en/keychain.xml
+Requires:	openssh-clients
+Requires:	sh-utils
 BuildArch:	noarch
-Provides:	keychain
-Requires:	bash openssh-clients sh-utils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,16 +24,14 @@ once per new login session to once every time your local machine is
 rebooted.
 
 %description -l pl
-Keychain jest bardzo porêcznym narzêdziem do zarz±dzania kluczami ssh.
-Dzia³a jako nak³adka na ssh-agent pozwalaj±c na posiadanie przez
-u¿ytkownika dok³adnie jednego agenta w systemie zamiast jednego na
-ka¿d± sesjê, dziêki czemu redukowana jest liczba pytañ pytañ o has³o
-do kluczy.
+Keychain jest bardzo porêcznym narzêdziem do zarz±dzania kluczami
+RSA/DSA dla SSH, zgodnym z OpenSSH i komercyjnym SSH2. Dzia³a jako
+nak³adka na ssh-agent pozwalaj±c na posiadanie przez u¿ytkownika
+dok³adnie jednego agenta w systemie zamiast jednego na ka¿d± sesjê,
+dziêki czemu redukowana jest liczba pytañ pytañ o has³o do kluczy.
 
 %prep
 %setup -q
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
