@@ -28,7 +28,7 @@ Keychain jest bardzo porêcznym narzêdziem do zarz±dzania kluczami
 RSA/DSA dla SSH, zgodnym z OpenSSH i komercyjnym SSH2. Dzia³a jako
 nak³adka na ssh-agent pozwalaj±c na posiadanie przez u¿ytkownika
 dok³adnie jednego agenta w systemie zamiast jednego na ka¿d± sesjê,
-dziêki czemu redukowana jest liczba pytañ pytañ o has³o do kluczy.
+dziêki czemu redukowana jest liczba pytañ o has³o do kluczy.
 
 %prep
 %setup -q
