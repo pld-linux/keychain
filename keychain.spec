@@ -1,13 +1,13 @@
 Summary:	Key management application for SSH RSA/DSA keys
 Summary(pl):	Zarz±dca kluczy RSA/DSA dla SSH
 Name:		keychain
-Version:	2.0.3
-Release:	1
+Version:	2.2.0
+Release:	0.1
 License:	GPL v2
 Vendor:		Gentoo Technologies, Inc.
 Group:		Applications/Networking
 Source0:	http://distro.ibiblio.org/pub/linux/distributions/gentoo/distfiles/%{name}-%{version}.tar.bz2
-# Source0-md5:	1183410bac4a747cd9ae483a1f24b7c5
+# Source0-md5:	423fc69592f048985d265b2ef927dce4
 URL:		http://www.gentoo.org/proj/en/keychain.xml
 Requires:	openssh-clients
 Requires:	sh-utils
@@ -35,8 +35,9 @@ dziêki czemu redukowana jest liczba pytañ o has³o do kluczy.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
-install keychain $RPM_BUILD_ROOT%{_bindir}/keychain
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+install keychain	$RPM_BUILD_ROOT%{_bindir}/keychain
+install keychain.1	$RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -45,3 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README
 %attr(755,root,root) %{_bindir}/keychain
+%{_mandir}/man?/*
