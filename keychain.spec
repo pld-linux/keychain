@@ -1,13 +1,13 @@
 Summary:	Key management application for SSH RSA/DSA keys
 Summary(pl):	Zarz±dca kluczy RSA/DSA dla SSH
 Name:		keychain
-Version:	2.6.1
+Version:	2.6.2
 Release:	1
 License:	GPL v2
 Vendor:		Gentoo Technologies, Inc.
 Group:		Applications/Networking
 Source0:	http://dev.gentoo.org/~agriffis/keychain/%{name}-%{version}.tar.bz2
-# Source0-md5:	408caf4fe29cd88d5684410ef896c33d
+# Source0-md5:	b20933be0fdbb0b32aa5eb7b5b082852
 URL:		http://www.gentoo.org/proj/en/keychain.xml
 Requires:	openssh-clients
 Requires:	sh-utils
