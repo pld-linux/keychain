@@ -1,5 +1,5 @@
 Summary:	Key management application for SSH RSA/DSA keys
-Summary(pl):	Zarz±dca kluczy RSA/DSA dla SSH
+Summary(pl.UTF-8):   ZarzÄ…dca kluczy RSA/DSA dla SSH
 Name:		keychain
 Version:	2.6.8
 Release:	1
@@ -23,12 +23,12 @@ reduces the number of times you need to enter your passphrase from
 once per new login session to once every time your local machine is
 rebooted.
 
-%description -l pl
-Keychain jest bardzo porêcznym narzêdziem do zarz±dzania kluczami
-RSA/DSA dla SSH, zgodnym z OpenSSH i komercyjnym SSH2. Dzia³a jako
-nak³adka na ssh-agent pozwalaj±c na posiadanie przez u¿ytkownika
-dok³adnie jednego agenta w systemie zamiast jednego na ka¿d± sesjê,
-dziêki czemu redukowana jest liczba pytañ o has³o do kluczy.
+%description -l pl.UTF-8
+Keychain jest bardzo porÄ™cznym narzÄ™dziem do zarzÄ…dzania kluczami
+RSA/DSA dla SSH, zgodnym z OpenSSH i komercyjnym SSH2. DziaÅ‚a jako
+nakÅ‚adka na ssh-agent pozwalajÄ…c na posiadanie przez uÅ¼ytkownika
+dokÅ‚adnie jednego agenta w systemie zamiast jednego na kaÅ¼dÄ… sesjÄ™,
+dziÄ™ki czemu redukowana jest liczba pytaÅ„ o hasÅ‚o do kluczy.
 
 %prep
 %setup -q
