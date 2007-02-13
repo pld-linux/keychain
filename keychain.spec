@@ -1,5 +1,5 @@
 Summary:	Key management application for SSH RSA/DSA keys
-Summary(pl.UTF-8):   Zarządca kluczy RSA/DSA dla SSH
+Summary(pl.UTF-8):	Zarządca kluczy RSA/DSA dla SSH
 Name:		keychain
 Version:	2.6.8
 Release:	1
