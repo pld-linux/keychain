@@ -8,6 +8,7 @@ Group:		Applications/Networking
 Source0:	http://www.funtoo.org/archive/keychain/%{name}-%{version}.tar.bz2
 # Source0-md5:	07c622833192189f483cbaec287f9704
 URL:		http://www.funtoo.org/en/security/keychain/intro/
+BuildRequires:	perl-tools-pod
 Requires:	openssh-clients
 Requires:	sh-utils
 BuildArch:	noarch
