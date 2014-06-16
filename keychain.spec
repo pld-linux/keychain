@@ -7,7 +7,7 @@ License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://www.funtoo.org/archive/keychain/%{name}-%{version}.tar.bz2
 # Source0-md5:	07c622833192189f483cbaec287f9704
-URL:		http://www.funtoo.org/en/security/keychain/intro/
+URL:		http://www.funtoo.org/Keychain
 BuildRequires:	perl-tools-pod
 Requires:	openssh-clients
 Requires:	sh-utils
@@ -40,7 +40,7 @@ dzięki czemu redukowana jest liczba pytań o hasło do kluczy.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install -p keychain $RPM_BUILD_ROOT%{_bindir}/keychain
-cp -a keychain.1 $RPM_BUILD_ROOT%{_mandir}/man1
+cp -p keychain.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
