@@ -2,7 +2,7 @@ Summary:	Key management application for SSH RSA/DSA keys
 Summary(pl.UTF-8):	Zarządca kluczy RSA/DSA dla SSH
 Name:		keychain
 Version:	2.8.0
-Release:	3
+Release:	4
 License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://www.funtoo.org/distfiles/keychain/%{name}-%{version}.tar.bz2
@@ -34,15 +34,18 @@ dzięki czemu redukowana jest liczba pytań o hasło do kluczy.
 
 %prep
 %setup -q
+mv keychain{,.sh}
 %patch0 -p1
 
+%if 0
 %build
 %{__make} keychain.1 keychain
+%endif
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
-install -p keychain $RPM_BUILD_ROOT%{_bindir}/keychain
+install -p keychain.sh $RPM_BUILD_ROOT%{_bindir}/keychain
 cp -p keychain.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
