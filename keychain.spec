@@ -1,12 +1,12 @@
 Summary:	Key management application for SSH RSA/DSA keys
 Summary(pl.UTF-8):	Zarządca kluczy RSA/DSA dla SSH
 Name:		keychain
-Version:	2.8.1
+Version:	2.8.2
 Release:	1
 License:	GPL v2
 Group:		Applications/Networking
-Source0:	http://www.funtoo.org/distfiles/keychain/%{name}-%{version}.tar.bz2
-# Source0-md5:	653f198fd4a2355f2482eec589954978
+Source0:	http://build.funtoo.org/distfiles/keychain/%{name}-%{version}.tar.bz2
+# Source0-md5:	2e1eef5237926086ddf7af497bf49b26
 URL:		http://www.funtoo.org/Keychain
 BuildRequires:	perl-tools-pod
 Requires:	openssh-clients
@@ -32,7 +32,7 @@ dzięki czemu redukowana jest liczba pytań o hasło do kluczy.
 
 %prep
 %setup -q
-mv keychain{,.sh}
+%{__mv} keychain{,.sh}
 
 %if 0
 %build
